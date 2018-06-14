@@ -1,0 +1,35 @@
+<h1>Interactive Hex Global Visualization</h1>
+<p>
+Try to move your cursor over the hex grid to view the globl rotated to center (the red dot) on the highlighted hex.
+</p>
+
+<link rel="stylesheet" href="css/hexmap/hexlib.css">
+<script src="js/d3/d3.v3.min.js"></script>
+<script src="js/d3/topojson.v1.min.js"></script>
+<script src="js/d3/d3.hexbin.js"></script>
+
+
+<div id="globecontainer">
+</div>
+
+<div class="float-container">
+  <div style="width:280px;display:inline-block;margin:5px">
+    <svg id="grid-offset-odd-r" width="800" height="417"></svg>
+  </div>
+</div>
+
+<div id="hexbin"></div>
+
+<script src="js/hexmap/hexlib.js"></script>
+<script src="js/hexmap/hexlib_ui.js"></script>
+<script src="js/hexmap/hexglobe.js"></script>
+
+<script>
+  var grid_odd_r = makeHexOddR("#grid-offset-odd-r", 10, 800, 417);
+  makeHexBinMap(grid_odd_r, "#hexbin", 10, "images/world_height.png", 800, 417);
+</script>
+
+<script src="js/hexmap/globe.js"></script>
+
+<script src="js/jquery/jquery-1.7.min.js"></script>
+<script src="js/jquery/jquery.event.drag-2.2.js"></script>
