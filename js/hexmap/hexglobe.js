@@ -1,4 +1,4 @@
-// convenience funciton to create a Hex Globe
+// hexglobe.js - convenience funciton to create a Hex Globe
 // require: hexlib.js hexlib_ui.js
 //
 

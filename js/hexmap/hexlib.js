@@ -1,3 +1,6 @@
+// hexlib code is following Amit's Hex Grid implementation at
+// https://www.redblobgames.com/grids/hexagons/implementation.html
+//
 (function (console, $hx_exports) { "use strict";
 var Cube = $hx_exports.Cube = function(x,y,z) {
 	this.x = x;

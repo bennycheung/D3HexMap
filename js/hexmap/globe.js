@@ -1,4 +1,6 @@
-
+// globe.js - load TopoJson world-110m.json to construct the globe
+// It has been modified to map the hex grid on the globe.
+//
 var width = 360,
 height = 360,
 speed = 0.05,
